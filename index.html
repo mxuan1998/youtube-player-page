@@ -4,174 +4,440 @@
     <title>Youtube Player Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=reset.css”>
     <link rel=”stylesheet” href=”style.css”>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
+    <!-- Navbar -->
     <header>
-        <a href="#">
-            <img id="burger-menu" src="assets/burger-menu.png" alt="burger menu">
-        </a>
-        <a href="#">
-            <img src="assets/youtube-logo.png" alt="Youtube Logo">
-        </a>
-        <form>
-            <input tyle="text" placeholder="Search">
-        </form>
-        <button>
-            <img src="assets/search.png" alt="search button">
-        </button>
-        <div id="header-btns">
-            <img src="assets/video-icon.png" alt="video icon">
-            <img src="assets/app-icon.png" alt="app icon">
-            <img src="assets/bell-icon.png" alt="bell icon">
-            <a href="#">
-                <button>SIGN IN</button>
-            </a>
+        <div class="flex-container">
+            <div class="nav-icon">
+                <button class="material-icons">menu</button>
+            </div>
+
+            <div class="navbar-logo">
+                <img src="assets/youtube-logo.png" alt="Logo Youtube" width="78px">
+            </div>
+
+            <div id="search">
+                <form action="">
+                    <div class="container-form">
+                        <div style="width:100%">
+                            <div class="container-form2">
+                                <div id="container-icon">
+                                    <div class="container-icon2">
+                                        <a href="">
+                                            <span class="material-icons">keyboard</span>
+                                        </a>
+                                    </div>
+                                    <div class="flex-container">
+                                        <input type="text" value="" placeholder="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="material-icons">search</button>
+                </form>
+            </div>
+
+            <div id="buttons">
+                <div class="flex-container">
+                    <button class="material-icons">video_call</button>
+                </div>
+                <div class="flex-container">
+                    <button class="material-icons">apps</button>
+                </div>
+                <div class="flex-container">
+                    <button class="material-icons">sms</button>
+                </div>
+                <div class="flex-container">
+                    <button class="material-icons">notifications</button>
+                </div>
+                <div class="flex-container">
+                    <img id="image-profile" src="assets/profile-picture.jpg" alt="">
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="container">
-        <aside>
-            <h4>Up next</h4>
-            <div id="autoplay-container">
-                <h5>AUTOPLAY</h5>
-                <div id="autoplay-bg"></div>
-                <div id="autoplay-btn"></div>
+    <main>
+    <!-- Primary container -->
+        <div>
+            <div>
+                <iframe width="100%" height="573" src="https://www.youtube.com/embed/V74l_zS1x8E"
+                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" >
+                </iframe>
             </div>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar1.png" alt="sidebar image 1">
+            <div id="principal-info">
+                <h1>Contributing to Open Source Part I: The Easy Way</h1>
+                <div class="flex-container">
                     <div>
-                        <h5>Contributing to Open Source Part II: The Real Way</h5>
-                        <h6>The Odin Project</h6>
-                        <h6>21K views</h6>
+                        <span>47.699 views</span>
                     </div>
-                </article>
-            </a>
-
-            <div class="line"></div>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar2.png" alt="sidebar image 2">
-                    <div>
-                        <h5>Your First GitHub Pull Request (in 10 Mins)</h5>
-                        <h6>Jackson Bates</h6>
-                        <h6>9.8K views</h6>
+                    <div class="menu-info flex-container">
+                        <div class="flex-container">
+                            <button class="material-icons btn-info">thumb_up</button>
+                            <a href="#">340</a>
+                        </div>
+                        <div class="flex-container">
+                            <button class="material-icons btn-info">thumb_down</button>
+                            <a href="#">13</a>
+                        </div class="flex-container">
+                        <div class="flex-container">
+                            <button class="material-icons btn-info">reply</button>
+                            <a href="#">SHARE</a>
+                        </div>
+                        <div class="flex-container">
+                            <button class="material-icons btn-info">playlist_add</button>
+                            <a href="#">SAVE</a>
+                        </div>
+                        <div class="flex-container">
+                            <button class="material-icons btn-info">more_horiz</button>
+                        </div>
                     </div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar3.png" alt="sidebar image 3">
-                    <div>
-                        <h5>Competition is for Losers with Peter Thiel (How to Start a </h5>
-                        <h6>Y Combinator</h6>
-                        <h6>470K views</h6>
-                    </div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar4.png" alt="sidebar image 4">
-                    <div>
-                        <h5>'How to Get a Job at the Big 4 - Amazon, Facebook, Google &amp;</h5>
-                        <h6>imtiana</h6>
-                        <h6>766K views</h6>
-                    </div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar5.png" alt="sidebar image 5">
-                    <div>
-                        <h5>How to Get Started with Github - Beginner Tutorial</h5>
-                        <h6>MicrowaveSam</h6>
-                        <h6>504K views</h6>
-                    </div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="sidebar-vid">
-                    <img src="assets/sidebar6.png" alt="sidebar image 6">
-                    <div>
-                        <h5>How do I start working with Open Source and GitHub?</h5>
-                        <h6>JetBrainsTV</h6>
-                        <h6>12K views</h6>
-                    </div>
-                </article>
-            </a>
-        </aside>
-
-        <iframe src="https://www.youtube.com/embed/V74l_zS1x8E?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        <section id="vid-desc">
-            <h3>Contributing to Open Source Part I: The Easy Way</h3>
-            <h4>37,631 views</h4>
-            <div id="desc-buttons">
-                <div id="likes">
-                    <a href="#">
-                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
-                        </svg>
-                    </a>
                 </div>
-                <p>262</p>
-
-                <div class="btn-container">
-                    <a href="#">
-                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
-                        </svg>
-                    </a>
-                </div>
-                <p>8</p>
-
-                <div class="btn-container">
-                    <a href="#">
-                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                            <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
-                        </svg>
-                    </a>
-                </div>
-                <p>SHARE</p>
-
-                <div class="btn-container" id="add-to">
-                    <a href="#">
-                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
-                            <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
-                        </svg>
-                    </a>
-                </div> 
-                <p>SAVE</p>
-
-                <a href="#">
-                    <svg width="24" height="24">
-                        <circle cx="5" cy="12" r="2"></circle>
-                        <circle cx="12" cy="12" r="2"></circle>
-                        <circle cx="19" cy="12" r="2"></circle>
-                    </svg>
-                </a>
             </div>
+            <div id="description">
+                <div class="top-row flex-row flex-container">
+                    <div class="img-channel">
+                        <img src="assets/channel-image.jpg" alt="Channel image">
+                    </div>
+                    <div id="channel-info" class="flex-container">
+                        <div>
+                            <a href="#">The Odin Project</a>
+                        </div>
+                        <div>
+                            <span>Published on 27 Feb 2014</span>
+                        </div>
+                    </div>
+                    <div class="div-enrolled flex-row flex-container">
+                        <div class="enrolled">
+                            <button>Subscription 756</button>
+                        </div>
+                        <div class="bell-icon">
+                            <button class="material-icons">notifications</button>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="line"></div>
-            <div id="creator-icon">T</div>
-            <a href="#">
-                <button>SUBSCRIBE</button>
-            </a>
-            <article>
-                <h5>The Odin Project</h5>
-                <h6>Published on Feb 27, 2014</h6>
-                <p>How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open</p>
-                <a href="#"><p>SHOW MORE</p></a>
-            </article>
-        </section>
-    </section>
+                <div id="secundary-description">
+                    <div class="content">
+                        <p>
+                            How do you contribute to open source?  
+                            In this video, I'll describe the easiest way 
+                            to make a simple contribution to an open source project 
+                            -- without using the command line, a text editor, 
+                            "forking a repo", or even touching Git outside of Github. 
+                            I'll also describe what kinds of contributions open source 
+                            software projects are typically looking for.  As an example, 
+                            I use submitting a student solution to a web development 
+                            exercise from The Odin Project, a free online curriculum 
+                            for learning web development with Ruby on Rails.  
+                            You can find more information about that project at 
+                            <a href="http://theodinproject.com">
+                                http://theodinproject.com
+                            </a>.
+                        </p>
+                    </div>
+                    <div class="div-category flex-container">
+                        <div class="category">
+                            <h4>Category</h4>
+                        </div>
+                        <div class="link-category flex-container">
+                            <a href="#">Science and Technology</a>
+                        </div>
+                    </div>
+                    <div class="btn-show">
+                        <button>Show less</button>
+                    </div>
+                </div>
+            </div>
+            
+     <!-- Secondary container -->
+        <div id="secondary-container" class="flex-container">
+            <div class="autoplay-header">
+                <div class="play-header flex-row">
+                    <div class="upnext">
+                        Up next
+                    </div>
+                    <div class="autoplay">
+                        AUTOPLAY
+                    </div>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch"></label>
+                    </div>
+                </div>
+                <div class="img-video flex-row">
+                    <div class="flex-row">
+                        <div class="video-img">
+                            <a href="https://www.youtube.com/watch?v=mENDYhfxH-o&t=350s">
+                                <img src="assets/sidebar1.png" alt="The Odin Project">
+                            </a>
+                        </div>
+                        <div class="metadata">
+                            <a href="#">
+                                <h3>
+                                    Contributing to Open Source Part II:
+                                    The Real Way
+                                </h3>
+                                <div class="metadata2">
+                                    <div class="metadata-channel flex-row">
+                                        The Odin Project
+                                    </div>
+                                    <div class="metadata-channel flex-row">
+                                        28 mil views
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=M38aWHxwtXE">
+                            <img src="assets/sidebar2.png" alt="Bad Wolves - Hear Me Now feat. DIAMANTE (Official Video)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Bad Wolves - Hear Me Now feat. DIAMANTE (Official Video)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    E7 Music
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=wEERFBI9eCg">
+                            <img src="assets/sidebar3.png" alt="Nightwish - Wish I Had An Angel (OFFICIAL VIDEO)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Nightwish - Wish I Had An Angel (OFFICIAL VIDEO)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    Nightwish
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=ZZhOD9nMa_I">
+                            <img src="assets/sidebar4.png" alt="Linkin Park Sao Paulo 2012 HD Show Completo Legendado PT BR">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Linkin Park Sao Paulo 2012 HD Show Completo Legendado PT BR
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    RAPHAEL SOUZA 
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=9-SQGOYOjxs">
+                            <img src="assets/sidebar5.png" alt="Rise Against - Prayer Of The Refugee (Official Music Video)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Rise Against - Prayer Of The Refugee (Official Music Video)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                   RiseAgainst
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=gYsOkI0swck">
+                            <img src="assets/sidebar6.png" alt="Raimundos - A Mais Pedida">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Raimundos - A Mais Pedida
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                   Raimundos Não Oficial
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=eJnQBXmZ7Ek">
+                            <img src="assets/sidebar1.png" alt="twenty one pilots - Chlorine (Official Video)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                twenty one pilots - Chlorine (Official Video)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    twenty one pilots
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=p32b5nNq1zw">
+                            <img src="assets/sidebar2.png" alt="Iron Maiden - Fear of The Dark (HQ)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Iron Maiden - Fear of The Dark (HQ)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    Adrian Aragon
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=qw2LU1yS7aw">
+                            <img src="asset/sidebar3.png" alt="Slipknot - Before I Forget [OFFICIAL VIDEO]">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Slipknot - Before I Forget [OFFICIAL VIDEO]
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    Slipknot
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=YwGSAFarHRg">
+                            <img src="assets/sidebar4.png" alt="Nightwish - Ever Dream (Wacken 2013)">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Nightwish - Ever Dream (Wacken 2013)
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    GhostHell
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    Recommended
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="img-video">
+                <div class="flex-row">
+                    <div class="video-img">
+                        <a href="https://www.youtube.com/watch?v=cwDqjmSmtMQ">
+                            <img src="assets/sidebar5.png" alt="Programming in Visual Basic">
+                        </a>
+                    </div>
+                    <div class="metadata">
+                        <a href="#">
+                            <h3>
+                                Programming in Visual Basic .Net How to Connect Access...
+                            </h3>
+                            <div class="metadata2">
+                                <div class="metadata-channel flex-row">
+                                    iBasskung
+                                </div>
+                                <div class="metadata-channel flex-row">
+                                    10 mil views
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
   </body>
 </html>
