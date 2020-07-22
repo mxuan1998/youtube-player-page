@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+    <title>Youtube Player Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” href=”style.css”>
+  </head>
+  <body>
+    <header>
+        <div class="btn-container">
+            <a href="#">
+                <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" class="style-scope yt-icon"></path>
+                </svg>
+            </a>
+        </div>
+        <a href="#">
+            <img src="assets/youtube-logo.png" alt="Youtube Logo">
+        </a>
+        <form>
+            <input tyle="text" placeholder="Search">
+        </form>
+        <button>
+            <div class="btn-container" id="search-btn">
+                <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" class="style-scope yt-icon"></path>
+                </svg>
+            </div>
+        </button>
+        <div id="header-btns">
+            <div class="btn-container">
+                <a href="#">
+                    <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z" class="style-scope yt-icon"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="btn-container">
+                <a href="#">
+                    <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" class="style-scope yt-icon"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="btn-container">
+                <a href="#">
+                    <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                        <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" class="style-scope yt-icon"></path>
+                    </svg>
+                </a>
+            </div>
+            <a href="#">
+                <button>SIGN IN</button>
+            </a>
+        </div>
+    </header>
+
+    <section id="container">
+        <aside>
+            <h4>Up next</h4>
+            <div id="autoplay-container">
+                <h5>AUTOPLAY</h5>
+                <div id="autoplay-bg"></div>
+                <div id="autoplay-btn"></div>
+            </div>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar1.png" alt="sidebar image 1">
+                    <div>
+                        <h5>Contributing to Open Source Part II: The Real Way</h5>
+                        <h6>The Odin Project</h6>
+                        <h6>21K views</h6>
+                    </div>
+                </article>
+            </a>
+
+            <div class="line"></div>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar2.png" alt="sidebar image 2">
+                    <div>
+                        <h5>Your First GitHub Pull Request (in 10 Mins)</h5>
+                        <h6>Jackson Bates</h6>
+                        <h6>9.8K views</h6>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar3.png" alt="sidebar image 3">
+                    <div>
+                        <h5>Competition is for Losers with Peter Thiel (How to Start a </h5>
+                        <h6>Y Combinator</h6>
+                        <h6>470K views</h6>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar4.png" alt="sidebar image 4">
+                    <div>
+                        <h5>'How to Get a Job at the Big 4 - Amazon, Facebook, Google &amp;</h5>
+                        <h6>imtiana</h6>
+                        <h6>766K views</h6>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar5.png" alt="sidebar image 5">
+                    <div>
+                        <h5>How to Get Started with Github - Beginner Tutorial</h5>
+                        <h6>MicrowaveSam</h6>
+                        <h6>504K views</h6>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="sidebar-vid">
+                    <img src="assets/sidebar6.png" alt="sidebar image 6">
+                    <div>
+                        <h5>How do I start working with Open Source and GitHub?</h5>
+                        <h6>JetBrainsTV</h6>
+                        <h6>12K views</h6>
+                    </div>
+                </article>
+            </a>
+        </aside>
+
+        <iframe src="https://www.youtube.com/embed/V74l_zS1x8E?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        <section id="vid-desc">
+            <h3>Contributing to Open Source Part I: The Easy Way</h3>
+            <h4>37,631 views</h4>
+            <div id="desc-buttons">
+                <div id="likes">
+                    <a href="#">
+                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <p>262</p>
+
+                <div class="btn-container">
+                    <a href="#">
+                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"</path>
+                        </svg>
+                    </a>
+                </div>
+                <p>8</p>
+
+                <div class="btn-container">
+                    <a href="#">
+                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <p>SHARE</p>
+
+                <div class="btn-container" id="add-to">
+                    <a href="#">
+                        <svg width="100%" height="100%" viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet">
+                            <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"></path>
+                        </svg>
+                    </a>
+                </div> 
+                <p>SAVE</p>
+
+                <a href="#">
+                    <svg width="24" height="24">
+                        <circle cx="5" cy="12" r="2"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle cx="19" cy="12" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="line"></div>
+            <div id="creator-icon">T</div>
+            <a href="#">
+                <button>SUBSCRIBE</button>
+            </a>
+            <article>
+                <h5>The Odin Project</h5>
+                <h6>Published on Feb 27, 2014</h6>
+                <p>How do you contribute to open source?  In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github.  I'll also describe what kinds of contributions open</p>
+                <a href="#"><p>SHOW MORE</p></a>
+            </article>
+        </section>
+    </section>
+
+  </body>
+</html>
